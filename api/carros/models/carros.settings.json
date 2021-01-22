@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carros",
+  "info": {
+    "name": "carros",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "placa": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "marca": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "biginteger"
+    },
+    "datospersonale": {
+      "model": "datospersonales",
+      "via": "carros"
+    },
+    "categoria": {
+      "model": "categorias",
+      "via": "carros"
+    }
+  }
+}

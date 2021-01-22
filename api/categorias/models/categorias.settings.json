@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "categorias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoria": {
+      "type": "string"
+    },
+    "carros": {
+      "via": "categoria",
+      "collection": "carros"
+    }
+  }
+}

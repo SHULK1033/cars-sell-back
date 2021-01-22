@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "datospersonales",
+  "info": {
+    "name": "datospersonales",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombres": {
+      "type": "string"
+    },
+    "apellidos": {
+      "type": "string"
+    },
+    "tipoId": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "datospersonales"
+    },
+    "carros": {
+      "via": "datospersonale",
+      "collection": "carros"
+    }
+  }
+}
