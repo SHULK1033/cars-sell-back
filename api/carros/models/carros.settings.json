@@ -12,7 +12,8 @@
   },
   "attributes": {
     "placa": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "modelo": {
       "type": "string"
